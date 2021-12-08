@@ -1,0 +1,13 @@
+<odoo>
+    <record model="ir.ui.view" id="view_company_form">
+        <field name="name">view_company_form</field>
+        <field name="model">res.company</field>
+        <field name="inherit_id" ref="base.view_company_form" />
+        <field name="priority">75</field>
+        <field name="arch" type="xml">
+            <xpath expr="//group/group" position="inside">
+                <field name="resource_calendar_id" />
+            </xpath>
+        </field>
+    </record>
+</odoo>
